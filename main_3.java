@@ -1,7 +1,7 @@
 public class main_3 {
     public static void main(String[] args) {
-        int[] arrayA = {1, 16, 28}; // Масив A
-        int[] arrayB = {2, 17, 29}; // Масив B
+        int[] arrayA = {1, 16, 28}; 
+        int[] arrayB = {2, 17, 29}; 
 
         try {
             int[] mergedArray = mergeArrays(arrayA, arrayB);
