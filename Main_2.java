@@ -1,6 +1,6 @@
 public class Main_2 {
     public static void main(String[] args) {
-        int[] array = {4, -22, 61, -7, -5, -8}; // масив
+        int[] array = {4, -22, 61, -7, -5, -8}; 
         try {
             double average = calAverage(array);
             System.out.println("Середнє арифметичне від’ємних: " + average);
