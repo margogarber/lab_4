@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        int[] array = {4, 22, 61, -7, -5}; // масив
+        int[] array = {4, 22, 61, -7, -5}; 
         try {
             int diff = calDiff(array);
-            System.out.println("Різниця: " + diff); // Очікується 68
+            System.out.println("Різниця: " + diff); 
         } catch (IllegalArgumentException | NullPointerException e) {
             System.out.println("Помилка: " + e.getMessage());
         }
