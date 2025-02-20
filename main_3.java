@@ -5,21 +5,21 @@ public class main_3 {
 
         try {
             int[] mergedArray = mergeArrays(arrayA, arrayB);
-            System.out.print("Злитий масив: ");
+            System.out.print("Merged array: ");
             for (int num : mergedArray) {
                 System.out.print(num + " ");
             }
         } catch (IllegalArgumentException | NullPointerException e) {
-            System.out.println("Помилка: " + e.getMessage());
+            System.out.println("error: " + e.getMessage());
         }
     }
 
     public static int[] mergeArrays(int[] a, int[] b) {
         if (a == null || b == null) {
-            throw new NullPointerException("Один з масивів не може бути null.");
+            throw new NullPointerException("One of the arrays cannot be null.");
         }
         if (a.length != b.length) {
-            throw new IllegalArgumentException("Масиви повинні мати однакову довжину.");
+            throw new IllegalArgumentException("Arrays must have the same length.");
         }
 
         int n = a.length;
