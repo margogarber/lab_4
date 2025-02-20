@@ -3,18 +3,18 @@ public class Main {
         int[] array = {4, 22, 61, -7, -5}; 
         try {
             int diff = calDiff(array);
-            System.out.println("Різниця: " + diff); 
+            System.out.println("diffrence: " + diff); 
         } catch (IllegalArgumentException | NullPointerException e) {
-            System.out.println("Помилка: " + e.getMessage());
+            System.out.println("Exception: " + e.getMessage());
         }
     }
 
     public static int calDiff(int[] arr) {
         if (arr == null) {
-            throw new NullPointerException("Масив не може бути null.");
+            throw new NullPointerException("Array cannot be null.");
         }
         if (arr.length == 0) {
-            throw new IllegalArgumentException("Масив не може бути порожнім.");
+            throw new IllegalArgumentException("Array cannot be empty.");
         }
 
         int max = arr[0];
