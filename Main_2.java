@@ -3,18 +3,18 @@ public class Main_2 {
         int[] array = {4, -22, 61, -7, -5, -8}; 
         try {
             double average = calAverage(array);
-            System.out.println("Середнє арифметичне від’ємних: " + average);
+            System.out.println("Arithmetic mean of negative values: " + average);
         } catch (IllegalArgumentException | NullPointerException e) {
-            System.out.println("Помилка: " + e.getMessage());
+            System.out.println("error: " + e.getMessage());
         }
     }
 
     public static double calAverage(int[] arr) {
         if (arr == null) {
-            throw new NullPointerException("Масив не може бути null.");
+            throw new NullPointerException("Array cannot be null.");
         }
         if (arr.length == 0) {
-            throw new IllegalArgumentException("Масив не може бути порожнім.");
+            throw new IllegalArgumentException("Array cannot be empty.");
         }
 
         int sum = 0;
@@ -28,7 +28,7 @@ public class Main_2 {
         }
 
         if (count == 0) {
-            throw new IllegalArgumentException("В масиві немає від’ємних елементів з парними номерами.");
+            throw new IllegalArgumentException("There are no negative elements with even numbers in the array..");
         }
 
         return (double) sum / count;
